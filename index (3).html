@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipos de input</title>
+    <link href="css/style.css" type="text/css" media="all"> 
+</head>
+<body bgcolor="aquamarine">
+<input type="text" id="name" name="name" required
+    minlength="10" maxlength="10" size="30">
+    <input type="text" id="name" name="name" required
+    minlength="10" maxlength="10" size="30">
+
+    <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+    </div>
+    
+    <div>
+        <label for="pass">Contraseña (8 caracteristicas minimo):</label>
+        <input type="password" id="pass" name="password"
+               minlength="8" required>
+    </div>
+    
+    <input type="submit" value="Sign in">
+    
+    
+    <fieldset>
+        <legend>Select a maintenance drone:</legend>
+    
+        <div>
+          <input type="radio" id="huey" name="drone" value="huey"
+                 checked>
+          <label for="huey">Alto</label>
+        </div>
+    
+        <div>
+          <input type="radio" id="dewey" name="drone" value="dewey">
+          <label for="dewey">Medio</label>
+        </div>
+    
+        <div>
+          <input type="radio" id="louie" name="drone" value="louie">
+          <label for="louie">Bajo</label>
+        </div>
+    </fieldset>
+    
+    
+    <label
+  ><input type="checkbox" id="cbox1" value="first_checkbox" /> Este es mi primer
+  checkbox</label
+><br />
+
+
+
+    <input type="button" value="pick me">
+    <input type="color" value="#ff0000" />
+    <label for="email">Enter your email:</label>
+
+<input type="email" id="email"
+       pattern=".+@globex\.com" size="30" required>
+
+       <label for="avatar">Seleccione un archivo:</label>
+
+       <input type="file"
+       id="avatar" name="avatar"
+       accept="image/png, image/jpeg">
+       
+       <input id="prodId" name="prodId" type="hidden" value="xm234jq" />
+       <p>Sign in to your account:</p>
+
+       <div>
+         <label for="userId">User ID</label>
+         <input type="text" id="userId" name="userId">
+       </div>
+       <div class="imagen">
+       <input type="image" id="image" alt="Login"
+              src="https://www.elespectador.com/resizer/rjJbijVoj-cyWUhL7p7UhIPUJIs=/525x350/filters:quality(60):format(jpeg)/cloudfront-us-east-1.images.arcpublishing.com/elespectador/G4R6G7ZLPJAWZPYKUHYXTP4RVY.jpg">
+            </div>
+            <label for="tentacles">Number of tentacles (10-100):</label>
+
+            <input type="number" id="tentacles" name="tentacles"
+                   min="10" max="100">
+                   <input id="number" type="number" value="42" />
+</body>
+</html>
